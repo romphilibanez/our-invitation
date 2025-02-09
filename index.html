@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Envelope Section -->
+    <div class="envelope-container" onclick="openEnvelope()">
+        <div class="envelope">
+            <div class="flap"></div>
+            <div class="letter">
+                <p>Click to Open</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Invitation Section (Hidden Initially) -->
+    <div class="invitation hidden">
+        <div class="card">
+            <img src="images/couple.jpg" alt="Couple Photo" class="couple-photo">
+            <h1>Jhoghie & Rom</h1>
+            <p>Join us in celebrating our wedding!</p>
+            <p>📅 Date: December 15, 2025</p>
+            <p>📍 Venue: The Grand Wedding Hall</p>
+            <p>💌 We can't wait to celebrate with you!</p>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="palagi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
