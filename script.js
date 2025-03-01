@@ -12,7 +12,7 @@ function openEnvelope() {
 
     // Play background music with a fixed volume
     let music = document.getElementById('background-music');
-    music.volume = 1.5; // 
+    music.volume = 1.0; // 
     music.play();
 	music.currentTime = 6; // Start from 6 seconds
 }
