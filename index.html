@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation</title>
@@ -11,6 +12,7 @@
     <!-- Envelope Section -->
     <div class="envelope-container" onclick="openEnvelope()">
         <div class="envelope">
+		 <img src="images/leaf.png" class="leaf-decor" alt="Leaf Decoration">
             <div class="flap"></div>
             <div class="letter">
                 <p>Click to Open</p>
@@ -18,21 +20,54 @@
         </div>
     </div>
 
-    <!-- Invitation Section (Hidden Initially) -->
+    <!-- Scrollable Invitation Section (Initially Hidden) -->
     <div class="invitation hidden">
-        <div class="card">
-            <img src="images/couple.jpg" alt="Couple Photo" class="couple-photo">
-            <h1>Jhoghie & Rom</h1>
-            <p>Join us in celebrating our wedding!</p>
-            <p>📅 Date: December 15, 2025</p>
-            <p>📍 Venue: The Grand Wedding Hall</p>
-            <p>💌 We can't wait to celebrate with you!</p>
+        <div class="scroll-container">
+            <div class="paper">
+				<img src="images/couple.jpg" alt="Couple Photo" class="couple-photo">
+                <h1 class="couple-names">Romphil & Jhoghie</h1>
+                <p>💍 <strong>Join us in celebrating our wedding!</strong> 💍</p>
+                
+                <h2>📅 Event Details</h2>
+                <p><strong>Date:</strong> December 15, 2025</p>
+                <p><strong>Time:</strong> 2:00 PM</p>
+                <p><strong>Venue:</strong> 
+				 <a href="https://maps.app.goo.gl/qMWmmrwxtezHEkmx6" target="_blank">
+					Jhaymar's Treehouse Events Place (29 Gloria, Novaliches, Quezon City, Metro Manila)
+				 </a>
+
+                <h2>🎨 Motif</h2>
+                <a href="https://i.pinimg.com/736x/cf/2d/d8/cf2dd80d3982f6dba053494621928a0a.jpg" target="_blank">Elegant Forest Green & White</a>
+
+                <h2>👗 Recommended Attire</h2>
+                <p>Formal or Semi-Formal (Forest Green)</p>
+
+                <h2>🎁 Gifts & Contributions</h2>
+                <p>We are not expecting gifts, but if you'd like to bless us, monetary contributions are appreciated.</p>
+                <p><strong>Bank Details:</strong></p>
+                <p><strong>Bank Name:</strong> [Your Bank Name]</p>
+                <p><strong>Account Name:</strong> [Your Account Name]</p>
+                <p><strong>Account Number:</strong> [XXXX-XXXX-XXXX]</p>
+				
+				<section id="faq">
+				<h2>Frequently Asked Questions</h2>
+					<ul>
+						<li><strong>Can I bring a plus-one?</strong> Due to limited seating, we kindly ask that only guests listed on the invitation attend.</li>
+						<li><strong>Are kids allowed?</strong> To ensure all guests can relax and fully enjoy the celebration, we have decided to keep our special day an adults-only event. We appreciate your understanding.</li>
+						<li><strong>Do I need to RSVP?</strong> Yes, your RSVP helps us finalize guest arrangements, including seating, catering, and other details. Please let us know by the requested date so we can plan accordingly!</li>
+					</ul>
+					<p>We can't wait to celebrate this special day with you! 🎉</p>
+				</section>
+
+
+                
+            </div>
         </div>
     </div>
 
     <!-- Background Music -->
     <audio id="background-music" loop>
-        <source src="palagi.mp3" type="audio/mpeg">
+        <source src="song.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
