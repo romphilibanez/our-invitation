@@ -5,12 +5,12 @@ body {
     background-color: #f9f6f2;
     margin: 0;
     padding: 0;
-	background-image: url('images/background.jpg');
-    background-size: contain;  /* Ensures the image covers the full background */
+    background-image: url('images/background.jpg');
+    background-size: cover;  /* Ensures the image covers the full background */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps background static when scrolling */
     background-repeat: no-repeat; /* Prevents image repetition */
-	overflow: auto;
+    overflow: auto;
     scroll-behavior: smooth;
 }
 
@@ -225,8 +225,8 @@ body::before {
 }
 
 .couple-names {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5em;
+    font-family: 'Mea Culpa', cursive;
+    font-size: 3.5em;
      color: #000;
 }
 
@@ -245,5 +245,111 @@ body::before {
     .paper {
         padding: 15px;
         font-size: 14px;
+    }
+}
+
+/* Styling for bank details section */
+.bank-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between banks */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-top: 15px;
+}
+
+/* Individual bank styling */
+.bank {
+    background: rgba(255, 255, 255, 0.9); /* Light background for clarity */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px; /* Consistent width */
+}
+
+/* QR Code styling */
+.qr-code {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Bank name styling */
+.bank-name {
+    font-weight: bold;
+    color: #2c5e1a; /* Matches the theme */
+}
+
+/* Account number styling */
+.account-number {
+    font-size: 14px;
+    color: #333; /* Slightly darker for contrast */
+}
+
+.guest-list-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.guest-list-container h1 {
+    font-family: 'Mea Culpa', cursive;
+    font-size: 2.5em;
+    color: #2c5e1a;
+    margin-bottom: 30px;
+}
+
+.guest-list-section {
+    margin-bottom: 25px;
+}
+
+.guest-list-section h2 {
+    font-size: 1.8em;
+    color: #264d26; /* Slightly darker green to match theme */
+    border-bottom: 2px solid #264d26;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.guest-list-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.guest-list-section ul li {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.8;
+    padding-left: 20px;
+    position: relative;
+}
+
+.guest-list-section ul li::before {
+    content: "🍃"; /* Adds a leaf icon before the name */
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+@media (max-width: 600px) {
+    .guest-list-container {
+        padding: 15px;
+    }
+
+    .guest-list-container h1 {
+        font-size: 2em;
+    }
+
+    .guest-list-section h2 {
+        font-size: 1.5em;
+    }
+
+    .guest-list-section ul li {
+        font-size: 1em;
     }
 }
