@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -225,9 +227,13 @@ body::before {
 }
 
 .couple-names {
-    font-family: 'Mea Culpa', cursive;
-    font-size: 3.5em;
-     color: #000;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #2f4f2f; /* Elegant forest green tone */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 /* Hidden Class */
@@ -336,6 +342,35 @@ body::before {
     top: 3px;
 }
 
+
+/* Make the Guest List Link Stand Out */
+.guest-list-link {
+    margin: 30px auto;
+    padding: 15px 20px;
+    background-color: #2c5e1a;
+    display: inline-block;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.guest-list-link a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.guest-list-link:hover {
+    transform: scale(1.05);
+    background-color: #3a7a29;
+}
+
+.guest-list-link a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
     .guest-list-container {
         padding: 15px;
@@ -352,4 +387,80 @@ body::before {
     .guest-list-section ul li {
         font-size: 1em;
     }
+}
+
+.attire-photo {
+    margin: 15px auto 30px;
+    text-align: center;
+}
+
+.attire-photo img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.attire-photo {
+    margin: 15px auto 30px;
+    text-align: center;
+}
+
+.attire-photo img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #2c5e1a;
+    color: white;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #244c15;
+    transform: scale(1.05);
+}
+
+.motif-image-wrapper {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.motif-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.motif-image:hover {
+    transform: scale(1.03);
+}
+
+.wedding-subtitle {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 1.0rem;
+    color: #3e5d3e; /* Muted forest green */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.date-time-image {
+    width: 80%; /* Responsive to container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto;
 }
