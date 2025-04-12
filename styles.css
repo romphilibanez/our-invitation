@@ -229,7 +229,7 @@ body::before {
 .couple-names {
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
-    color: #2f4f2f; /* Elegant forest green tone */
+    color: black;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -450,7 +450,7 @@ body::before {
 .wedding-subtitle {
     font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
     font-size: 1.0rem;
-    color: #3e5d3e; /* Muted forest green */
+    color: black;
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
