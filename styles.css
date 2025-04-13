@@ -448,14 +448,14 @@ body::before {
 }
 
 .wedding-subtitle {
-    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-    font-size: 1.0rem;
-    color: black;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-    font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: .6rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .date-time-image {
