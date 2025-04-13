@@ -1,89 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Entourage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-image: url('images/background.jpg'); /* Your background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #2c3e50;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.88); /* Elegant white layer */
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: #2c5e1a;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .entourage-section {
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+        }
+
+        .entourage-section img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .entourage-section img:hover {
+            transform: scale(1.03);
+        }
+
+        .entourage-label {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #264d26;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .entourage-section img {
+                max-width: 90%;
+            }
+
+            .entourage-label {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Guest List Section -->
-    <div class="guest-list-container">
+    <div class="overlay">
         <h1>Wedding Entourage</h1>
 
-        <div class="guest-list-section">
-            <h2>Parents of the Groom</h2>
-            <ul>
-                <li>Mr. & Mrs. George</li>
-            </ul>
+        <div class="entourage-section">
+            <img src="images/1.png" alt="Parents of the Groom">
+            <div class="entourage-label"></div>
         </div>
 
-        <div class="guest-list-section">
-            <h2>Parents of the Bride</h2>
-            <ul>
-                <li>Mr. & Mrs. Kelly</li>
-            </ul>
-        </div>
-		
-		<div class="guest-list-section">
-            <h2>Maid of Honor</h2>
-            <ul>
-                <li>Susan Williams</li>
-            </ul>
+        <div class="entourage-section">
+            <img src="images/2.png" alt="Best Man">
+            <div class="entourage-label"></div>
         </div>
 
-        <div class="guest-list-section">
-            <h2>Best Man</h2>
-            <ul>
-                <li>Michael Brown</li>
-            </ul>
-        </div>
-		
-		<div class="guest-list-section">
-            <h2>Principal Sponsors</h2>
-            <ul>
-                <li>Mr. & Mrs. A</li>
-                <li>Mr. & Mrs. B</li>
-                <li>Mr. & Mrs. C</li>
-            </ul>
+
+        <div class="entourage-section">
+            <img src="images/4.png" alt="Groomsmen">
+            <div class="entourage-label"></div>
         </div>
 
-        <div class="guest-list-section">
-            <h2>Groomsmen</h2>
-            <ul>
-                <li>John Doe</li>
-                <li>Paul Smith</li>
-                <li>David Johnson</li>
-            </ul>
+        <div class="entourage-section">
+            <img src="images/3.png" alt="Secondary Sponsors">
+            <div class="entourage-label"></div>
         </div>
-
-        <div class="guest-list-section">
-            <h2>Bridesmaids</h2>
-            <ul>
-                <li>Emily Rose</li>
-                <li>Alice Green</li>
-                <li>Mary Jane</li>
-            </ul>
-        </div>
-
-        <!-- Secondary Sponsors Section -->
-        <div class="guest-list-section">
-            <h2>Secondary Sponsors</h2>
-            <ul>
-                <li>Candle: Jonathan & Clara</li>
-                <li>Cord: James & Rebecca</li>
-                <li>Veil: Sarah & Tom</li>
-                <li>Ringbearer: Liam Smith</li>
-                <li>Biblebearer: Emma Smith</li>
-                <li>Coinbearer: Lucas Brown</li>
-                <li>Flowergirls: Lily & Daisy</li>
-            </ul>
-        </div>
-
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

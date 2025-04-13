@@ -44,7 +44,7 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-family: "Georgia", serif; /* Matches an elegant invitation style */
+    font-family: "Georgia", serif; 
 }
 
 #faq h2 {
@@ -62,7 +62,7 @@ a:active {
 }
 
 #faq li {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 15px;
     color: #2c3e50; /* Darker text for readability */
     line-height: 1.6;
@@ -80,7 +80,7 @@ a:active {
 #faq p {
     text-align: center;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: .8em;
 }
 
 .highlight {
